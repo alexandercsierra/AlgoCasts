@@ -19,4 +19,11 @@ function reverse(str) {
     return newStr
 }
 
+//using the reduce method, it starts with an empty string, then that gets passed in the callback as "reversed", with every subsequent loop we are adding the current character to the beginning of the string, effectively reversing it.
+function reverse(str){
+    str.split('').reduce((reversed, character)=> {
+        return character + reversed;
+    }, '')
+}
+
 module.exports = reverse;
