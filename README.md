@@ -10,10 +10,10 @@ Companion repo to [The Coding Inteview Bootcamp: Algorithms + Data Structures](h
 |✅ maxchar
 |✅ fizzbuzz
 |✅ chunk
+|✅ anagrams
 
 |Not Yet Completed|
 |:----|
-|✖ anagrams
 |✖ capitalize
 |✖ steps
 |✖ pyramid
