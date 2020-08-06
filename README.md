@@ -13,10 +13,10 @@ Companion repo to [The Coding Inteview Bootcamp: Algorithms + Data Structures](h
 |✅ anagrams
 |✅ capitalize
 |✅ steps
+|✅ pyramid
 
 |Not Yet Completed|
 |:----|
-|✖ pyramid
 |✖ vowels
 |✖ fib
 |✖ queue
