@@ -14,10 +14,10 @@ Companion repo to [The Coding Inteview Bootcamp: Algorithms + Data Structures](h
 |✅ capitalize
 |✅ steps
 |✅ pyramid
+|✅ vowels
 
 |Not Yet Completed|
 |:----|
-|✖ vowels
 |✖ fib
 |✖ queue
 |✖ weave
