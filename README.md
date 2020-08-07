@@ -15,6 +15,7 @@ Companion repo to [The Coding Inteview Bootcamp: Algorithms + Data Structures](h
 |✅ steps
 |✅ pyramid
 |✅ vowels
+|✅ matrix
 
 |Not Yet Completed|
 |:----|
