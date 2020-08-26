@@ -16,10 +16,10 @@ Companion repo to [The Coding Inteview Bootcamp: Algorithms + Data Structures](h
 |✅ pyramid
 |✅ vowels
 |✅ matrix
+|✅ fib
 
 |Not Yet Completed|
 |:----|
-|✖ fib
 |✖ queue
 |✖ weave
 |✖ stack
