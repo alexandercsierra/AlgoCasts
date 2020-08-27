@@ -19,10 +19,10 @@ Companion repo to [The Coding Inteview Bootcamp: Algorithms + Data Structures](h
 |✅ fib
 |✅ queue
 |✅ weave
+|✅ stack
 
 |Not Yet Completed|
 |:----|
-|✖ stack
 |✖ qfroms
 |✖ linkedlist
 |✖ midpoint
