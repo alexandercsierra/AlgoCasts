@@ -14,6 +14,57 @@
 
 const Stack = require('./stack');
 
-class Queue {}
+class Queue {
+    constructor(){
+        this.stackOne = new Stack;
+        this.stackTwo = new Stack;
+    }
+
+    add(item){
+        this.stackOne.push(item)
+    }
+
+    remove(){
+        while(this.stackOne.peek()){
+            let removed = this.stackOne.pop();
+            this.stackTwo.push(removed)
+        }
+
+        let dequeued = this.stackTwo.pop();
+        while(this.stackTwo.peek()){
+            let removed = this.stackTwo.pop()
+            this.stackOne.push(removed)
+        }
+        return dequeued
+    }
+
+    peek(){
+        let peeked;
+        while(this.stackOne.peek()){
+            let removed = this.stackOne.pop();
+            this.stackTwo.push(removed)
+            peeked = removed;
+        }
+        
+        while(this.stackTwo.peek()){
+            let removed = this.stackTwo.pop()
+            this.stackOne.push(removed)
+        }
+
+        return peeked;
+    }
+}
 
 module.exports = Queue;
+
+
+
+/*
+stack
+top 1 2 3 btm
+top       btm
+
+in a queue to dequeue would mean getting out the three
+
+
+*/
