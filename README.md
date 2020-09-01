@@ -22,10 +22,10 @@ Companion repo to [The Coding Inteview Bootcamp: Algorithms + Data Structures](h
 |✅ stack
 |✅ qfroms
 |✅ linkedlist
+|✅ midpoint
 
 |Not Yet Completed|
 |:----|
-|✖ midpoint
 |✖ circular
 |✖ tree
 |✖ bst
