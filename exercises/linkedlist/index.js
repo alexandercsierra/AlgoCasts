@@ -112,18 +112,15 @@ class LinkedList {
     removeAt(index){
         //list is empty
         if(!this.head){
-            console.log('no head')
             return null;
         }
         //remove the head
         else if(index === 0){
-            console.log('index is 0')
             let oldHead = this.head
             this.head = oldHead.next
             return oldHead
         //remove some other node
         } else{
-            console.log('index is not 0')
             let nodeToRemove = this.getAt(index);
             if(nodeToRemove){
                 //node at that index is not the tail
@@ -140,6 +137,50 @@ class LinkedList {
 
 
     }
+
+    insertAt(data, index){
+        let size = this.size()
+        let node = new Node(data)
+        // console.log(this.head)
+        //ll is empty
+        if(size === 0){
+            this.head = node;
+        //insert as the head
+        } else if(index === 0){
+            let head = this.head;
+            node.next = head
+            this.head = node
+        //insert somewhere in the middle
+        } else if(index > 0 && index < size){
+            let prev = this.getAt(index-1);
+            let next = this.getAt(index);
+
+            prev.next = node;
+            node.next = next;
+        //index is out of bounds
+        } else {
+            let tail = this.getLast()
+            tail.next = node
+        } 
+    }
+
+    forEach(fn){
+        let current = this.head;
+        while(current){
+            let next = current.next;
+            fn(current);
+            current = next;
+        }
+    }
+
+    *[Symbol.iterator](){
+        let node = this.head;
+        while(node){
+            yield node;
+            node = node.next;
+        }
+    }
+
 
 
 }
